@@ -20,3 +20,24 @@ preview:
     repository:
     tag:
     pullPolicy: IfNotPresent
+
+
+postgresql:
+  postgresUser: nestup
+  postgresPassword: nestup
+  postgresDatabase: nestup
+  postgresConfig:
+    max_prepared_transactions : 30
+    max_connections: 30
+keycloak:
+  keycloak:
+    persistence:
+      dbVendor: postgres
+      deployPostgres: false
+      dbName: keycloak
+      dbHost: postgresql
+      dbPort: 5432
+      dbUser: nestup
+      dbPassword: nestup
+    username: 'admin'
+    password: 'test'    
