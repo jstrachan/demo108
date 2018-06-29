@@ -11,3 +11,9 @@ dependencies:
 - alias: preview
   name: demo108
   repository: file://../demo108
+- name: postgresql
+  version: 0.14.3
+  repository: https://kubernetes-charts.storage.googleapis.com/
+- name: keycloak
+  repository: https://kubernetes-charts.storage.googleapis.com/
+  version: 1.0.0
