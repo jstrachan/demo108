@@ -46,6 +46,8 @@ pipeline {
             sh "git config --global credential.helper store"
 
             sh "jx step git credentials"
+            sh "skaffold version"
+
             // so we can retrieve the version in later steps
             sh "echo \$(jx-release-version) > VERSION"
             sh "mvn versions:set -DnewVersion=\$(cat VERSION)"
